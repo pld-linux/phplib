@@ -4,13 +4,6 @@ Name:		phplib
 Version:	7.2d
 Release:	1
 Group:		Libraries
-Group(de):	Libraries
-Group(es):	Bibliotecas
-Group(fr):	Librairies
-Group(pl):	Biblioteki
-Group(pt_BR):	Bibliotecas
-Group(ru):	Библиотеки
-Group(uk):	Б╕бл╕отеки
 License:	LGPL
 Source0:	http://prdownloads.sourceforge.net/phplib/%{name}-%{version}.tar.bz2
 URL:		http://phplib.sourceforge.net/
