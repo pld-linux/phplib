@@ -6,6 +6,7 @@ Release:	1
 Group:		Libraries
 License:	LGPL
 Source0:	http://dl.sourceforge.net/phplib/%{name}-%{version}.tar.bz2
+# Source0-md5:	b927af46a619a703325038696dd49d8c
 URL:		http://phplib.sourceforge.net/
 Requires:	php-common
 BuildArch:	noarch
