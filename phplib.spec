@@ -30,12 +30,10 @@ install -d $RPM_BUILD_ROOT%{_phpsharedir}/%{name}
 
 install php/*		$RPM_BUILD_ROOT%{_phpsharedir}/%{name}
 
-gzip -9nf doc/*.html doc/FAQ.ps doc/README* CHANGES CREDITS HELP TODO
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz doc/*.gz pages
+%doc doc/*.html doc/FAQ.ps doc/README* CHANGES CREDITS HELP TODO pages
 %{_phpsharedir}/%{name}
