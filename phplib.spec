@@ -5,7 +5,7 @@ Version:	7.2d
 Release:	1
 Group:		Libraries
 License:	LGPL
-Source0:	http://prdownloads.sourceforge.net/phplib/%{name}-%{version}.tar.bz2
+Source0:	http://dl.sourceforge.net/phplib/%{name}-%{version}.tar.bz2
 URL:		http://phplib.sourceforge.net/
 Requires:	php-common
 BuildArch:	noarch
