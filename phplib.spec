@@ -1,0 +1,48 @@
+Summary:	A library for PHP development
+Summary(pl):	Biblioteka do rozwijania aplikacji PHP
+Name:		phplib
+Version:	7.2d
+Release:	1
+Group:		Libraries
+Group(de):	Libraries
+Group(es):	Bibliotecas
+Group(fr):	Librairies
+Group(pl):	Biblioteki
+Group(pt_BR):	Bibliotecas
+Group(ru):	‚…¬Ã…œ‘≈À…
+Group(uk):	‚¶¬Ã¶œ‘≈À…
+License:	LGPL
+Source0:	http://prdownloads.sourceforge.net/phplib/%{name}-%{version}.tar.bz2
+URL:		http://phplib.sourceforge.net/
+Requires:	php-common
+BuildArch:	noarch
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+
+%define		_phpsharedir	%{_datadir}/php
+
+%description
+phplib is a library that will help you to write medium to large sized
+data-driven web applications with PHP.
+
+%description -l pl
+phplib to biblioteka, ktÛra u≥atwi ci pisanie ∂rednich i duøych
+aplikacji web bazuj±cych na PHP.
+
+%prep
+%setup  -q
+
+%install
+rm -rf $RPM_BUILD_ROOT
+install -d $RPM_BUILD_ROOT%{_phpsharedir}/%{name}
+
+install php/*		$RPM_BUILD_ROOT%{_phpsharedir}/%{name}
+
+gzip -9nf doc/*.html doc/FAQ.ps doc/README* CHANGES CREDITS HELP TODO
+
+%clean
+rm -rf $RPM_BUILD_ROOT
+
+%files
+%defattr(644,root,root,755)
+%doc *.gz doc/*.gz pages
+%{_phpsharedir}/%{name}
