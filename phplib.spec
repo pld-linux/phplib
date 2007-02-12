@@ -1,5 +1,5 @@
 Summary:	A library for PHP development
-Summary(pl):	Biblioteka do rozwijania aplikacji PHP
+Summary(pl.UTF-8):   Biblioteka do rozwijania aplikacji PHP
 Name:		phplib
 Version:	7.2d
 Release:	1
@@ -18,9 +18,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 phplib is a library that will help you to write medium to large sized
 data-driven web applications with PHP.
 
-%description -l pl
-phplib to biblioteka, ktÛra u≥atwi ci pisanie ∂rednich i duøych
-aplikacji web bazuj±cych na PHP.
+%description -l pl.UTF-8
+phplib to biblioteka, kt√≥ra u≈Çatwi ci pisanie ≈õrednich i du≈ºych
+aplikacji web bazujƒÖcych na PHP.
 
 %prep
 %setup  -q
