@@ -1,5 +1,5 @@
 Summary:	A library for PHP development
-Summary(pl.UTF-8):   Biblioteka do rozwijania aplikacji PHP
+Summary(pl.UTF-8):	Biblioteka do rozwijania aplikacji PHP
 Name:		phplib
 Version:	7.2d
 Release:	1
