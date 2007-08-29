@@ -25,6 +25,7 @@ aplikacji web bazujących na PHP.
 
 %package template
 Summary:	PHPLIB template engine
+Summary(pl.UTF-8):	Silnik szablonów PHPLIB
 Group:		Development/Languages/PHP
 
 %description template
@@ -34,14 +35,21 @@ fields. The class provides you with functions which can fill in the
 replacement fields with arbitrary strings. These strings can become
 very large, e.g. entire tables.
 
+%description template -l pl.UTF-8
+Klasa szablonów pozwala przechowywać kod HTML w plikach zewnętrznych,
+całkowicie wolnych od kodu PHP, ale zawierających pola zastępcze.
+Klasa ta udostępnia funkcje, którymi można wypełniać pola zastępcze
+dowolnymi łańcuchami znaków. Łańcuchy te mogą być bardzo duże, np.
+całymi tabelami.
+
 %prep
-%setup  -q
+%setup -q
 
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_appdir}/%{name}
 
-install php/*		$RPM_BUILD_ROOT%{_appdir}/%{name}
+install php/* $RPM_BUILD_ROOT%{_appdir}/%{name}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
