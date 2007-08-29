@@ -8,8 +8,8 @@ Group:		Development/Languages/PHP
 Source0:	http://dl.sourceforge.net/phplib/%{name}-%{version}.tar.gz
 # Source0-md5:	0dfc72f77d1503d562fa3cbbad066b48
 URL:		http://phplib.sourceforge.net/
-Requires:	php-common
 Requires:	%{name}-template = %{version}-%{release}
+Requires:	php-common
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -28,10 +28,11 @@ Summary:	PHPLIB template engine
 Group:		Development/Languages/PHP
 
 %description template
-The template class allows you to keep your HTML code in some external files
-which are completely free of PHP code, but contain replacement fields.  The
-class provides you with functions which can fill in the replacement fields with
-arbitrary strings. These strings can become very large, e.g. entire tables.
+The template class allows you to keep your HTML code in some external
+files which are completely free of PHP code, but contain replacement
+fields. The class provides you with functions which can fill in the
+replacement fields with arbitrary strings. These strings can become
+very large, e.g. entire tables.
 
 %prep
 %setup  -q
