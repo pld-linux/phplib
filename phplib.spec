@@ -27,6 +27,7 @@ aplikacji web bazujących na PHP.
 Summary:	PHPLIB template engine
 Summary(pl.UTF-8):	Silnik szablonów PHPLIB
 Group:		Development/Languages/PHP
+Requires:	php-common
 
 %description template
 The template class allows you to keep your HTML code in some external
