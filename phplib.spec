@@ -2,14 +2,14 @@ Summary:	A library for PHP development
 Summary(pl.UTF-8):	Biblioteka do rozwijania aplikacji PHP
 Name:		phplib
 Version:	7.4a
-Release:	1
+Release:	2
 License:	LGPL
 Group:		Development/Languages/PHP
-Source0:	http://dl.sourceforge.net/phplib/%{name}-%{version}.tar.gz
+Source0:	http://downloads.sourceforge.net/phplib/%{name}-%{version}.tar.gz
 # Source0-md5:	0dfc72f77d1503d562fa3cbbad066b48
 URL:		http://phplib.sourceforge.net/
 Requires:	%{name}-template = %{version}-%{release}
-Requires:	php-common
+Requires:	php(core)
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -27,7 +27,7 @@ aplikacji web bazujących na PHP.
 Summary:	PHPLIB template engine
 Summary(pl.UTF-8):	Silnik szablonów PHPLIB
 Group:		Development/Languages/PHP
-Requires:	php-common
+Requires:	php(core)
 
 %description template
 The template class allows you to keep your HTML code in some external
